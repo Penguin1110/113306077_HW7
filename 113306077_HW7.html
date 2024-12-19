@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Layout</title>
+    <link rel="stylesheet" href="113306077_HW7.css">
+</head>
+<body>
+    <div class="main-container">
+ 
+        <div class="left-panel">
+            <div class="photo-panel"></div>
+            
+            <div class="text-content">
+                <div class="editable-container">
+                    <h1 id="name-display" class="editable-name">紀立竺</h1>
+                    <button id="edit-name">edit</button>
+                </div>
+                
+                <h2>ABOUT ME</h2>
+                <p>我是一名政大新生，剛接受完期中折磨</p>
+                <p>喜歡寫程式:)，會C++/一點JAVA/一點點python</p>
+                <h3>CONTACT</h3>
+                <p>113306077@g.nccu.edu.tw</p>
+                <img src="nccu_logo.png" alt="NCCU" class="icon">
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <section>
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="entry">
+                        <span class="year">2024 - Now</span>
+                        <span class="description">National Chengchi University, Department of MIS</span>
+                    </div>
+                    <div class="entry">
+                        <span class="year">2022 - 2024</span>
+                        <span class="description">Taichung First Senior High School</span>
+                    </div>
+                    <div class="entry">
+                        <span class="year">2018 - 2022</span>
+                        <span class="description">Middle School Graduation</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Homework List</h2>
+                <ul>
+                    <li><a href="https://github.com/Penguin1110/HW1.git">HW1 - GitHub Link</a></li>
+                    <li><a href="https://github.com/Penguin1110/HW2.git">HW2 - GitHub Link</a></li>
+                    <li><a href="https://github.com/Penguin1110/HW3.git">HW3 - GitHub Link</a></li>
+                    <li><a href="https://github.com/Penguin1110/HW4.git">HW4 - GitHub Link</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Favorite Music</h2>
+                <button id="add-music">Add Music</button>
+                <div class="music-gallery" id="music-list">
+                    <div class="music-item">
+                        <a href="https://www.youtube.com/watch?v=RjQlLJInKU8&list=PL65_eQwk0UjDJTWbQCJAYELQCl796wSA8&index=26">
+                            <img src="youtube.png" alt="Mela!">
+                        </a>
+                        <span>Mela!</span>
+                    </div>
+                    <div class="music-item">
+                        <a href="https://www.youtube.com/watch?v=bIL3joknwFw&list=PL65_eQwk0UjDJTWbQCJAYELQCl796wSA8">
+                            <img src="youtube.png" alt="花に雨を">
+                        </a>
+                        <span>花に雨を君に歌を</span>
+                    </div>
+                    <div class="music-item">
+                        <a href="https://www.youtube.com/watch?v=16y5JtPNV1o&list=PL65_eQwk0UjDJTWbQCJAYELQCl796wSA8&index=19"><img src="youtube.png" alt="強風オールバック"></a><br>
+                        <br>
+                        <span>強風オールバック</span>
+                    </div>
+                    <div class="music-item">
+                        <a href="https://www.youtube.com/watch?v=ZKzHx5wqg00&list=PL65_eQwk0UjDJTWbQCJAYELQCl796wSA8&index=25"><img src="youtube.png" alt="たぶん"></a><br>
+                        <br>
+                        <span>たぶん</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- 彈出式表單 -->
+    <div id="music-form" class="hidden">
+        <h3>Add New Music</h3>
+        <input type="text" id="music-url" placeholder="Music URL">
+        <input type="text" id="music-name" placeholder="Music Name">
+        <button id="submit-music">Submit</button>
+        <button id="cancel-music">Cancel</button>
+    </div>
+
+    <script src="113306077_HW7.js"></script>
+</body>
+</html>
